@@ -1,0 +1,71 @@
+.wrapperTodoList {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 500px;
+  max-width: 750px;
+  border-radius: 20px;
+  background: #3D4A5C;
+}
+
+.todoList > div {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  font-size: 24px;
+  color: #ffffff;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+}
+
+.button {
+  padding: 10px 40px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.button {
+  background: #8608FF;
+  box-shadow: 0 0 25px #8608FF;
+}
+
+.button:hover {
+  box-shadow: 0 0 5px #8608FF,
+  0 0 25px #8608FF,
+  0 0 50px #8608FF,
+  0 0 100px #8608FF;
+}
+
